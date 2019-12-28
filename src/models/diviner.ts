@@ -1,7 +1,8 @@
-import {ProjectModel} from './project-model'
-import {NodeNpm} from './node-npm'
+import { ProjectModel } from './project-model'
+import { NodeNpm } from './node-npm'
+import { Maven } from './maven'
 
-const MODELS = [NodeNpm]
+const MODELS = [Maven, NodeNpm]
 
 export class Diviner {
   constructor(public readonly rootDir: string, private readonly log: any, private readonly error: any) { }

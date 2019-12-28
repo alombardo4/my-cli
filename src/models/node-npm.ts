@@ -1,7 +1,7 @@
-import {ProjectModel} from './project-model'
-import {readFileSync, existsSync} from 'fs'
-import {join} from 'path'
-import {run} from '../util/run'
+import { ProjectModel } from './project-model'
+import { readFileSync, existsSync } from 'fs'
+import { join } from 'path'
+import { run } from '../util/run'
 
 export class NodeNpm extends ProjectModel {
   async getInstanceIfValid(): Promise<this | null> {
@@ -27,14 +27,7 @@ export class NodeNpm extends ProjectModel {
       this.error('Command failed with code', installResult)
       return installResult
     }
-
-    const packageJson = JSON.parse(readFileSync(join(this.sourceDir, 'package.json')).toString())
-    let buildResult = 0
-    if (packageJson.scripts.build) {
-      this.log('Found build script. Running...')
-      buildResult = run(this.sourceDir, 'npm run build', this.log, this.error)
-    }
-    return buildResult
+    return run(this.sourceDir, 'npm run build --if-present', this.log, this.error)
   }
 
   async test(): Promise<number> {
