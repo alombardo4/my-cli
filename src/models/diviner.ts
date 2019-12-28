@@ -9,7 +9,6 @@ export class Diviner {
 
   async getProjectModel(): Promise<ProjectModel> {
     for (const model of MODELS) {
-      // eslint:disable
       const modelResult = await new model(this.rootDir, this.log, this.error).getInstanceIfValid()
       if (modelResult) {
         return modelResult

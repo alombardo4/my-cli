@@ -28,6 +28,7 @@ USAGE
 * [`my-cli hello [FILE]`](#my-cli-hello-file)
 * [`my-cli help [COMMAND]`](#my-cli-help-command)
 * [`my-cli package [SRC]`](#my-cli-package-src)
+* [`my-cli test [FILE]`](#my-cli-test-file)
 
 ## `my-cli hello [FILE]`
 
@@ -74,6 +75,18 @@ USAGE
 
 ARGUMENTS
   SRC  [default: /Users/alec/Git/my-cli] source directory
+
+OPTIONS
+  -h, --help  show CLI help
+```
+
+## `my-cli test [FILE]`
+
+run tests
+
+```
+USAGE
+  $ my-cli test [FILE]
 
 OPTIONS
   -h, --help  show CLI help
