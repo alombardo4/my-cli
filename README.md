@@ -28,7 +28,6 @@ USAGE
 * [`my-cli hello [FILE]`](#my-cli-hello-file)
 * [`my-cli help [COMMAND]`](#my-cli-help-command)
 * [`my-cli package [SRC]`](#my-cli-package-src)
-* [`my-cli test [SRC]`](#my-cli-test-src)
 
 ## `my-cli hello [FILE]`
 
@@ -72,21 +71,6 @@ run the package installer and build step
 ```
 USAGE
   $ my-cli package [SRC]
-
-ARGUMENTS
-  SRC  [default: /Users/alec/Git/my-cli] source directory
-
-OPTIONS
-  -h, --help  show CLI help
-```
-
-## `my-cli test [SRC]`
-
-runs the test command
-
-```
-USAGE
-  $ my-cli test [SRC]
 
 ARGUMENTS
   SRC  [default: /Users/alec/Git/my-cli] source directory
