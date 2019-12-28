@@ -16,7 +16,7 @@ $ npm install -g node-atl-2020-cli
 $ my-cli COMMAND
 running command...
 $ my-cli (-v|--version|version)
-node-atl-2020-cli/0.0.0 darwin-x64 node-v12.13.0
+node-atl-2020-cli/0.0.1 darwin-x64 node-v12.13.0
 $ my-cli --help [COMMAND]
 USAGE
   $ my-cli COMMAND
